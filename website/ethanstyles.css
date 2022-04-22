@@ -1,0 +1,79 @@
+/*
+Name: Ethan Kohn
+Date: March 21, 2019
+*/
+
+/* reset styles */
+html {
+	font-size: 12px;
+}
+a, body, header, footer, h1, h2, h3 {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+/* body */
+body {
+	max-width: 800px;
+	margin: 0 auto;
+	background: url("dark_mosaic.png");
+	color: ivory;
+}
+a:link {
+	color: #65eddf;
+}
+a:visited {
+	color: #ce52cc
+}
+
+/* header */
+h1 {
+	text-align: center;
+	font-weight: bold;
+	font-size: 48px;
+	background-color: #262424;
+}
+
+
+/* main content */
+h2 {
+	font-size: 24px;
+	color: #dadbc7;
+	background-color: #383834;
+}
+h3 {
+	color: #dadbc7;
+	background-color: #383834;
+}
+p {
+	font-size: 16px;
+}
+img.pets {
+	padding: 30px;
+	margin-left: 40px;
+}
+img.me {
+	padding: 10px;
+	float: right;
+}
+
+/* footer */
+.copyright {
+	color: #b70707;
+}
+
+/* media query */
+@media print {
+   body, h1, h2, h3, article, footer {
+      color: rgb(0,0,0);
+      background-color: rgb(255,255,255);
+   }
+   img.pets {
+	   padding: 5px;
+	   margin: 5px;
+   }
+}
+@page {
+   margin: 1in;
+}
