@@ -1,0 +1,21 @@
+[
+        {
+		"id": "cs3120project5",
+		"execute-command": "/home/ubuntu/pull-restart.sh",
+		"command-working-directory": "/home/ubuntu",
+		"trigger-rule": {
+			"and": [
+				{
+					"match": {
+						"type": "payload-hash-sha1",
+						"secret": "buttsss",
+						"parameter": {
+							"source": "header",
+							"name": "X-Hub-Signature"
+						}
+					}
+				}
+			]
+		}
+        }
+]
